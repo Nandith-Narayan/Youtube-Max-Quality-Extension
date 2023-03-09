@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Max Quality",
+  "description": "Auto selects max quality preset for YouTube videos",
+  "version": "1.0",
+  "action": {
+    "default_popup": "max_quality.html",
+    "default_icon": "hd.png"
+  }
+}
