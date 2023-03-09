@@ -6,5 +6,11 @@
   "action": {
     "default_popup": "max_quality.html",
     "default_icon": "hd.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["max_quality.js"]
+    }
+  ]
 }
