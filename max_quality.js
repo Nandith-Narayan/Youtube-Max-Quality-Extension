@@ -1,5 +1,7 @@
 settingsButton = null;
 
+url = "";
+
 function getSettingsButton(){
 
     settingsButton = document.querySelector("button.ytp-button.ytp-settings-button");
@@ -17,8 +19,14 @@ function getSettingsButton(){
     }
 }
 
-
-setTimeout(function(){
+function main(){
+    if (document.URL !== url){
+        url = document.URL;
+        getSettingsButton();
+    }
     
-    getSettingsButton();
-}, 1000);
+    setTimeout(main, 2000);
+
+}
+
+main();
